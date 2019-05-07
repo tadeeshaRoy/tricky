@@ -6,15 +6,30 @@ Example:
 
 array:
 
-{ {0, 0, 0, 0, 1},
-  {0, 1, 1, 1, 1},
-  {0, 0, 1, 1, 1},
-  {0, 0, 0, 1, 1}
- };
+[ [ 0 0 0 0 1 ]
+  [ 0 1 1 1 1 ]
+  [ 0 0 1 1 1 ]
+  [ 0 0 0 1 1 ] ]
+  
  
  here row with maximum number of truths is second one
  
- Solution is done in O(m+n) time complexity and O(1) space complexity.
+ Solution is done in O(m+n) time complexity and O(1) space complexity.Traversal is done in following manner:
+  
+  We traverse from end of the row and whenever a 0 is encountered, we take step back to the previous 1 and move down a row
+  
+             |
+            \|/
+ 
+ [ [ 0 0 0 0 1 ]
+        <----     
+   [ 0 1 1 1 1 ]
+       |
+      \|/  
+   [ 0 0 1 1 1 ]
+       |
+      \|/
+   [ 0 0 0 1 1 ] ] //end
 
 */
 

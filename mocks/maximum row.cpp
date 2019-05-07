@@ -31,6 +31,8 @@ array:
       \|/
    [ 0 0 0 1 1 ] ] //end
 
+
+This can also be done by Binary search to find the first 1 but that would take O(nlogm) time complexity
 */
 
 #include<iostream>
